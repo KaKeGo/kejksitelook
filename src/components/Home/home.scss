@@ -1,0 +1,78 @@
+
+.homeContainer {
+  margin-top: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+  .myPage {
+    color: dimgray;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 5px 10px 4px rgba(201, 201, 201, 0.47);
+
+    .title {
+      padding: 10px;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 500;
+    }
+    .textField {
+      color: black;
+      padding: 25px;
+      font-size: 18px;
+    }
+  }
+  .myPage2 {
+    margin-top: 15px;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 5px 10px 4px rgba(201, 201, 201, 0.47);
+
+    .title2 {
+      padding: 10px;
+      text-align: center;
+      color: dimgray;
+      font-size: 30px;
+      font-weight: 500;
+    }
+    .textField2 {
+      display: flex;
+
+      .img {
+        min-width: 350px;
+        padding: 20px;
+        height: 250px;
+        width: 450px;
+        border-radius: 50px;
+      }
+      .text {
+        margin: 20px;
+      }
+      h3 {
+      color: dimgray;
+      padding: 10px;
+    }
+    }
+  }
+}
+
+//Tablet
+@media screen and (max-width: 768px) {
+  .homeContainer {
+
+    margin-top: 120px;
+    .myPage2 {
+
+
+      .textField2 {
+        justify-items: center;
+        align-items: center;
+        margin: auto;
+        display: grid;
+
+        .img {
+          height: 350px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
